@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.top-container {
+  height: 65%;
+  background-color: rgb(244, 213, 171);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.box-top {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-left {
+  margin: 2rem;
+  max-width: 50%;
+}
+
+h2 {
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#text1 {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#register {
+  width: 90%;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+#text2 {
+  color: white;
+  font-size: small;
+  margin: 1.5rem;
+}
+
+#image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 3rem;
+}
+
+.bottom-container {
+  height: 35%;
+  background-color: rgb(41, 38, 38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-bottom {
+  width: 60%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-right {
+  text-align: end;
+  margin-right: 3rem;
+}
+
+.image2 {
+  width: 15%;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.1rem;
+  margin: 0.3rem;
+  font-size: small;
+}
+
+@media screen and (max-width: 425px) {
+  .container{
+    height: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  #image1 {
+    display: none;
+  }
+
+  #text1,
+  #text2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #register {
+    display: inline-block;
+    width: 100%;
+  }
+
+  input,
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .box-bottom {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .bottom-container {
+    text-align: center;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .container{
+    overflow-x: auto;
+  }
+
+  .box-top {
+    width: 90%;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+
+  .top-left {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  #image1 {
+    display: none;
+  }
+
+  #text1,
+  #text2 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #register {
+    display: inline-block;
+    width: 100%;
+  }
+
+  input,
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .bottom-container{
+    height: auto;
+  }
+
+  .box-bottom {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .bottom-left,
+  .bottom-right {
+    text-align: center;
+    margin-right: 0;
+    line-height: 3rem;
+  }
+
+  .image2 {
+    width: 8%;
+  }
+}
