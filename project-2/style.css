@@ -1,0 +1,198 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+nav {
+  height: 60px;
+  background-color: rgb(73, 106, 190);
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1000;
+}
+nav section {
+  display: flex;
+  width: 60%;
+}
+nav img {
+  height: 25px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  width: 90%;
+  justify-content: space-evenly;
+}
+ul li {
+  color: white;
+  font-size: large;
+  padding: 10px;
+}
+ul li:hover {
+  cursor: pointer;
+  background-color: rgb(63, 94, 174);
+  border-radius: 15px;
+}
+ul li:last-child {
+  width: 5rem;
+  background-image: url("assets/Vector.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+nav input {
+  border-radius: 50px;
+  border: none;
+  margin: 5px;
+  padding: 6px 15px;
+  width: 30%;
+  background-image: url("assets/search.png");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+::placeholder {
+  font-size: 0.8rem;
+  color: rgb(174, 167, 167);
+}
+main {
+  padding: 7rem 5rem 4rem 5rem;
+}
+.hero {
+  height: 55vh;
+  display: flex;
+}
+.hero img {
+  height: 100%;
+}
+.hero div {
+  box-shadow: inset 0px 0px 10px rgba(179, 175, 175, 0.5);
+  margin: 1.7%;
+  border-radius: 10px;
+  padding: 20px;
+  color: grey;
+  background-color: rgb(224, 203, 245);
+}
+.sub-hero {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.sub-hero div {
+  width: 18%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 0px 20px rgb(95, 89, 89);
+}
+.sub-hero div span {
+  display: block;
+  margin: 5px 0;
+}
+.sub-hero div:nth-child(1) {
+  background-color: rgb(124, 173, 236);
+}
+.sub-hero div:nth-child(2) {
+  background-color: rgb(97, 97, 224);
+}
+.sub-hero div:nth-child(3) {
+  background-color: rgb(245, 150, 245);
+}
+.sub-hero div:nth-child(4) {
+  background-color: black;
+}
+.info {
+  background-color: rgb(85, 85, 225);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 70vh;
+  margin-top: 8%;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.info .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.info .left button {
+  width: 60%;
+  height: 25%;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: medium;
+}
+.left .active {
+  background-color: lightblue !important;
+  color: black !important;
+  border: none !important;
+  box-shadow: 0px 0px 10px rgb(45, 45, 45);
+}
+.info .right {
+  background-color: white;
+  width: 60%;
+  padding: 3rem 2rem;
+  line-height: 1rem;
+  position: relative;
+  border-radius: 10px;
+}
+.info .right h2 {
+  margin-bottom: 2rem;
+}
+.info .right p {
+  margin: 15px;
+  font-size: small;
+}
+.info .right p span {
+  display: inline-block;
+  width: 3.7rem;
+  font-size: medium;
+}
+.info .right button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 3.6rem 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-image: url(assets/Arrow\ 1.png);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 1.5rem;
+}
+.chat img {
+  position: fixed;
+  right: 60px;
+  bottom: -10px;
+  height: 120px;
+}
+aside img {
+  height: 200px;
+  display: inline;
+}
+aside {
+  position: sticky;
+  float: right;
+  top: 0px;
+  z-index: 1;
+}
